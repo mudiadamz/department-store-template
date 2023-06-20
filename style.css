@@ -1,0 +1,77 @@
+/* style.css */
+.gradient-bg {
+    background: linear-gradient(to right, #2979ff, #4dabf5);
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.banner h1 {
+    font-family: 'YourUniqueFont', sans-serif;
+    /* Add additional font styles as desired */
+}
+
+.carousel-inner .carousel-item img {
+    max-height: 35vh;
+    object-fit: cover;
+}
+
+/* CSS for sophisticated button click animation */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.btn:hover:before {
+    width: 100%;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.search-container input,
+.search-container button {
+    margin: 0;
+    background-color: white !important;
+}
+.search-container button i {
+    color: #333;
+}
+.search-container input,
+.search-container input:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}

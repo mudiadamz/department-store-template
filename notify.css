@@ -1,0 +1,30 @@
+
+.notification-container {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.notification {
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.progress-bar {
+    height: 5px;
+    width: 0%;
+    background-color: #28a745;
+    transition: width 0.3s ease;
+}
